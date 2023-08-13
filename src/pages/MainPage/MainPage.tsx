@@ -48,7 +48,7 @@ export const MainPage: FC = appLayout((): JSX.Element => {
                     <StyledButtonYellow>BUY Now</StyledButtonYellow>
                 </StyledBox>
             </div>
-            <StyledTypographyTitle fontsize='32'>Browse The Range</StyledTypographyTitle>
+            <StyledTypographyTitle fs='32'>Browse The Range</StyledTypographyTitle>
             <StyledTypographySubtitle>Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit.</StyledTypographySubtitle>
             <Box
@@ -61,7 +61,7 @@ export const MainPage: FC = appLayout((): JSX.Element => {
                 {rangeBox(HomeRangeCenter, 'Living')}
                 {rangeBox(HomeRangeRight, 'Bedroom')}
             </Box>
-            <StyledTypographyTitle fontsize='40'>Our Products</StyledTypographyTitle>
+            <StyledTypographyTitle fs='40'>Our Products</StyledTypographyTitle>
             <SliceProducts sliceFrom={0} sliceTo={4}/>
         </>
     )

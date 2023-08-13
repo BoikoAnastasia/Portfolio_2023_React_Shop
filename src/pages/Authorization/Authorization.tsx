@@ -1,9 +1,15 @@
 import React, {FC, useState} from 'react';
-import appLayout from "../../hocs/appLayout";
-import {Box, Input, Typography} from "@mui/material";
-import {StyledBoxAuth, StyledButtonAuth, StyledButtonAuthTitle} from "./StyledAuth";
-import {loginUser} from "../../store/reducers/ActionCreate";
 import {useNavigate} from "react-router-dom";
+
+//components
+import appLayout from "../../hocs/appLayout";
+import {loginUser} from "../../store/reducers/ActionCreate";
+
+//mui
+import {Box, Input} from "@mui/material";
+
+//style
+import {StyledBoxAuth, StyledButtonAuth, StyledButtonAuthTitle} from "./StyledAuth";
 
 export const Authorization: FC = appLayout((): JSX.Element => {
     const navigate = useNavigate();

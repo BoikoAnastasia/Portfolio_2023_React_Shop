@@ -1,11 +1,14 @@
 import React, {FC, useEffect} from 'react';
+import {useDispatch} from "react-redux";
+
+//hooks
+import {useAppSelector} from "../../hooks/redux";
+
+//components
 import {TopBorder} from "../../components/topBorder/TopBorder";
 import appLayout from "../../hocs/appLayout";
 import {TableProductsCard} from "./components/TableProductsCard";
 import {fetchCartUser, fetchGetProductInfo, fetchWithAuth, loginUser} from "../../store/reducers/ActionCreate";
-import {useDispatch} from "react-redux";
-import {useAppSelector} from "../../hooks/redux";
-import {StyledloadingCircle} from "../../components/StylesComponents";
 
 export const CartPage: FC = appLayout((): JSX.Element => {
     const dispatch = useDispatch();

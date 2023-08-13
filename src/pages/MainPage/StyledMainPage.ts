@@ -37,8 +37,8 @@ export const StyledButtonYellow = styled(Button)(() => ({
     },
 }));
 
-export const StyledTypographyTitle = styled(Typography)<{ fontsize: string }>(({fontsize}) => ({
-    fontSize: `${fontsize}px`,
+export const StyledTypographyTitle = styled(Typography)<{ fs: string }>(({fs}) => ({
+    fontSize: `${fs}px`,
     color: '#333333',
     fontWeight: 'bold',
     textAlign: 'center',
